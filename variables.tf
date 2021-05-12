@@ -1,6 +1,8 @@
 variable "tenancy_ocid" {
 }
+#Default compartment workshopDevCompartment in Tenant atpdpreview11
 variable "compartment_id" {
+  default = "ocid1.compartment.oc1..aaaaaaaa22lrsx3p2o2gyrorw6vijcgsozs2um5zqa6b54daoatibzuvpakq"
 }
 
 variable "region" {
