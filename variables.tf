@@ -13,6 +13,9 @@ variable "atp_ad_num" {
   default = 3
 }
 
+variable "exashape" {
+  default = "Exadata.Quarter3.100"
+}
 variable "bastion_ssh_public_key_file" {
   default = "./devkey.pub"
 }

@@ -7,7 +7,7 @@ resource "oci_database_autonomous_exadata_infrastructure" "test_autonomous_exada
   display_name        = "ADBDtest"
   license_model       = "LICENSE_INCLUDED"
 
-  shape     = "Exadata.Quarter2.92"
+  shape     = var.exashape
   subnet_id      = module.create_net.dbNetId
 }
 
