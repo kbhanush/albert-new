@@ -8,6 +8,10 @@ groupings:
     variables:
     - ${compartment_id}
     - ${vcn_dns_label}
+  - title: "Network Settings"
+    variables:
+    - ${create_new_network}
+    - ${vcn_compartment_id}  
 
 variables:
   compartment_id:
@@ -23,3 +27,16 @@ variables:
     minLength: 0
     maxLength: 15
     required: false
+
+   create_new_network:
+    title: Create New Network
+    description: "Use this field to indicate whether you want to create new network resources or use existing ones"
+    type: boolean
+    required: true
+    default: false 
+
+   vcn_compartment_id:
+    title: VCN Network Compartment
+    description: "Compartment for new or existing Virtual Cloud Network (VCN)"
+    type: oci:identity:compartment:id
+ 
