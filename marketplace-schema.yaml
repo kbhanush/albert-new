@@ -8,7 +8,7 @@ groupings:
     variables:
     - ${compartment_id}
     - ${vcn_dns_label}
- 
+    - ${create_new_network}
 
 variables:
   compartment_id:
@@ -25,4 +25,10 @@ variables:
     maxLength: 15
     required: false
 
+  create_new_network:
+    title: Create New Network
+    description: "Use this field to indicate whether you want to create new network resources or use existing ones"
+    type: boolean
+    required: true
+    default: false
   

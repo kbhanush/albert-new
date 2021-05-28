@@ -30,3 +30,7 @@ variable "vcn_dns_label" {
   description = "DNS label for Virtual Cloud Network (VCN)"
 }
 
+variable "create_new_network" {
+  default = true
+  description = "Use this to deploy in a new VCN"
+}
